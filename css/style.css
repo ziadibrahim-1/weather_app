@@ -1,0 +1,157 @@
+*,::after,::before{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+.h5{margin-top:10px ;
+    margin-bottom: 0;
+
+}
+.size{
+    font-size: .8rem;
+}
+.height{
+    height: 117.2px;
+}
+.bg-nav{
+    background-color: #1E202B;
+}
+.container{
+    width: 75%;
+}
+.active{
+    padding: 5px 10px;
+    border: 2px solid #0C6A94;
+    border-radius: 30px;
+}
+a.nav-item{
+    padding: 5px 10px;
+    text-decoration: solid;
+    color: #fff;
+}
+/* start body */
+body{
+    background-color: #1E202B;
+}
+.bg-body{
+    background-image: url(../img/banner.png);
+    background-size: cover;
+}
+.vh-50{
+    height: 50vh;
+}
+div.w-100 div.container input{
+    top:100px;
+    left:11%
+}
+
+.form-control {
+    padding: 17px;
+    background-color: #1e202b!important;
+    border: none;
+    color: white ;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.form-control::-webkit-input-placeholder {
+    color:gray;
+}
+.btn{
+    padding: 16px 17px;
+}
+#find{
+    padding:15px 46px ;
+    top:100px;
+    right: -12.7%;
+    letter-spacing: 3px;
+}
+/* start cards */
+.card-header{
+    background-color: #2D303D;
+    color: #fff;
+    padding: 3px 7px;
+}
+.card-body
+{
+    background-color: #323544;
+}
+span{
+    color: aquamarine;
+}
+.sm-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+.middle{
+    width: 25%;
+    position: absolute;
+    left: 8.5%;
+    top: 297px;
+    right: 12.5%;
+}
+.bg-gold{
+    background-color: gold !important;
+}
+.bg-silver{
+    background-color: silver;
+}
+button{
+    position: absolute;
+    top:0;
+    right: 0;
+
+}
+/* footer */
+footer{
+    margin-top:200px;
+    background-color: #262936;
+    height: 315px;
+}
+
+.mt-50{
+    margin-top: 80px;
+}
+.vh-20{
+    height: 30vh;
+}
+i{
+    padding: 10px 20px;
+    width: 50px;
+    height: 50px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #323544;
+}
+.icon:hover{
+    background-color: #048AC1;
+    color: #fff !important;
+}
+
+@media screen and (max-width: 763px) {
+    footer{
+        margin-top:823px;
+    }
+    
+}
+
+@media screen and (max-width:991.2px) {
+    nav>div.container{
+        position: relative;
+    }
+    .navbar-toggler{
+        position: absolute;
+        top:16px;
+        right: 0;
+    }
+}

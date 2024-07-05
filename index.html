@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav height">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="img/logo.png" alt="logo" class="me-2 logo" />
+          <div class="caption text-light size">
+            <h1 class="h5">Weather</h1>
+            <p>tagline goes here</p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto p-4">
+            <a class="nav-item mx-3 active px-4" aria-current="page" href="#"
+              >Home</a
+            >
+            <a class="nav-item mx-3 px-4" href="#">Features</a>
+            <a class="nav-item mx-3 px-4" href="#">Live</a>
+            <a class="nav-item mx-3 px-4" href="#">Photos</a>
+            <a class="nav-item mx-3 px-4" href="#">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end Nav-bar -->
+    <!-- start body -->
+    <div class="w-100 bg-body vh-50">
+      <div class="container position-absolute">
+        <input 
+          id="search-input"
+          type="text"
+          placeholder=" Find your location.."
+          class="text-info form-control border border-0 py-3 rounded-pill bg-black-subtle position-absolute"
+        />
+        <button
+          id="find"
+          class="btn btn-info rounded-pill text-light position-absolute"
+        >
+          Find
+        </button>
+      </div>
+    </div>
+    <!-- start cards -->
+    <div class="container h-75 my-4">
+      <div class="middle w-75">
+        <div class="row gy-3">
+          <div class="col-md-4">
+            <div class="product-card">
+              <div class="card border-0 text-light">
+                <div class="card-header bg-gold d-flex justify-content-between align-items-center">
+                  <h5 id="todayName"></h5>
+                  <p id="todayDatee"></p>
+                </div>
+                <div class="card-body bg-silver text-dark">
+                  <div class="py-3">
+                      <p id="todayCity" class="card-text">
+                          cairo
+                        </p> 
+                        <div class="d-flex align-items-center ">
+                            <h2 id="firstDegree" class=""></h2><h3>&deg;</h3>
+                            <img id="todayImg" class="mx-3" src="" alt="">
+                        </div>
+                          <span id="todayStatus"></span>
+                          <div class="d-flex justify-content-around mt-4">
+                              <div class="d-flex">
+                                  <img class="sm-img" src="img/icon-umberella.png" alt="umberela">
+                                  <p id="todayHummedity">20</p>
+                              </div>
+                              <div class="d-flex">
+                                  <img class="sm-img" src="img/icon-compass.png" alt="umberela">
+                                  <p id="todayWind"></p>
+                              </div>
+                              <div class="d-flex">
+                                  <img class="sm-img" src="img/icon-wind.png" alt="umberela">
+                                  <p id="todayWindDir">East</p>
+                              </div>
+  
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="product-card">
+              <div class="card border-0 text-light">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <h5 id="tomorowDay"></h5>
+                  <p id="tomorowDate"></p>
+                </div>
+                <div class="card-body">
+                  <div class="py-3">
+                        <div class="d-flex align-items-center flex-column">
+                          <span id="tomorowStatus">clear</span>
+                          <img id="secoundImg" class="mx-3" src="img/113.png" alt="">
+                          <h2 id="secondDegree" class=""></h2>
+                          <h4 id="tomorowMinTemp"></h4>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="product-card">
+              <div class="card border-0 text-light">
+                <div class="card-header d-flex justify-content-between ">
+                  <h5 id="aftertomorowDay">Friday</h5>
+                  <p id="aftertomorowDate">4August</p>
+                </div>
+                <div class="card-body">
+                  <div class="py-3">
+                        <div class="d-flex align-items-center flex-column justify-content-center ">
+                            <span id="afterTomorowStatus"></span>
+                            <img id="afterTomorowImg" class="mx-3" src="" alt="">
+                            <h2 id="afterTomorowDeg" class=""></h2>
+                            <h4 id="afterTomorowMinTemp"></h4>
+                            
+                        </div>
+                          
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="w-100">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="w-100 my-5">
+          <div class="row gx-5 mx-2">
+            <div class="col-lg-7 position-relative me-5">
+              <input type="text" class="form-control rounded-5" placeholder="Enter your email to subscribe...">
+              <button class="btn btn-info rounded-5">Subscribe</button>
+              <p class="text-secondary text-center mt-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="d-flex justify-content-center align-items-center ">
+                  <div >
+                    <i class="icon ms-2 p-3 fa-brands fa-facebook-f  text-info"></i>
+                  </div>
+                  <div >
+                    <i class="icon mx-2 p-3 fa-brands fa-instagram  text-info"></i>
+                  </div>
+                  <div >
+                    <i class="icon mx-2 p-3 fa-brands fa-twitter  text-info"></i>
+                  </div>
+                  <div >
+                    <i class="icon mx-2 p-3 fa-brands fa-github  text-info"></i>
+                  </div>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
